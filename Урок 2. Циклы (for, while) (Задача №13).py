@@ -36,5 +36,4 @@ for i in range(n):
     if length > max_length:
         max_length = length
 
-
 print(max_length)

@@ -23,4 +23,3 @@ print((n + m - 1) // n)
 
 # решение 2
 print(ceil(m / n))
-

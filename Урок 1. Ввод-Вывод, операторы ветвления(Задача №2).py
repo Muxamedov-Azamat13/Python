@@ -8,4 +8,3 @@ while n > 0:
     count += n % 10
     n //= 10
 print(count)
-

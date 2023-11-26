@@ -6,3 +6,10 @@
 # 4 4 -> 2 2
 # 5 6 -> 2 3
 
+s = int(input('Введите число x: '))
+p = int(input('Введите число y: '))
+
+for x in range(s):
+    for y in range(p):
+        if s == x + y and p == x * y:
+            print(f'{s} {p} -> {x} {y}')
