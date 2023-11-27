@@ -6,17 +6,17 @@
 # Input: a a a b c a a d c d d
 # Output: a a_1 a_2 b c a_3 a_4 d c_1 d_1 d_2
 
-# lst = "a a a b c a a d c d d".split()
-# print(lst)
-# dct = {}
-# for item in lst:
-#     if item in dct:
-#         print(f"{item}_{dct[item]}", end=' ')
-#     else:
-#         print(item, end=' ')
-#     dct[item] = dct.get(item, 0) + 1
-#
-# print(dct)
+lst = "a a a b c a a d c d d".split()
+print(lst)
+dct = {}
+for item in lst:
+    if item in dct:
+        print(f"{item}_{dct[item]}", end=' ')
+    else:
+        print(item, end=' ')
+    dct[item] = dct.get(item, 0) + 1
+
+print(dct)
 
 # Задача №27. Решение в группах
 # Пользователь вводит текст(строка). Словом считается
@@ -29,14 +29,14 @@
 # shells on the sea shore I'm sure that the shells are sea
 # shore shells
 
-# twister = """She sells sea shells on the sea shore The shells
-# that she sells are sea shells I'm sure.So if she sells sea
-# shells on the sea shore I'm sure that the shells are sea
-# shore shells""".lower().split()
-#
-# print(len(set(twister)))
+twister = """She sells sea shells on the sea shore The shells
+that she sells are sea shells I'm sure.So if she sells sea
+shells on the sea shore I'm sure that the shells are sea
+shore shells""".lower().split()
 
-# Решение в группах
+print(len(set(twister)))
+
+# Задача №29. Решение в группах
 # Ваня и Петя поспорили, кто быстрее решит
 # следующую задачу: “Задана последовательность
 # неотрицательных целых чисел. Требуется определить
@@ -68,15 +68,15 @@
 #  n = max_number
 # print(n)
 
-# n = int(input())
-# max_number = n
-#
-# while n != 0:
-#     n = int(input())
-#     if max_number < n:
-#         max_number = n
-#
-# print(max_number)
+n = int(input())
+max_number = n
+
+while n != 0:
+    n = int(input())
+    if max_number < n:
+        max_number = n
+
+print(max_number)
 
 """
 Задача №31. Решение в группах
@@ -92,19 +92,19 @@ Input: 7
 Output: 21
 """
 
-# def fibonacci(n):
-#     if n < 3:
-#         return n
-#     return fibonacci(n-1) + fibonacci(n-2)
-#
-#
-# n = 7
-# print(fibonacci(n))
-#
-# fib1, fib2 = 0, 1
-# for i in range(0, n):
-#     fib1, fib2 = fib2, fib2 + fib1
-# print(fib2)
+def fibonacci(n):
+    if n < 3:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+
+
+n = 7
+print(fibonacci(n))
+
+fib1, fib2 = 0, 1
+for i in range(0, n):
+    fib1, fib2 = fib2, fib2 + fib1
+print(fib2)
 
 """
 Задача №33. Решение в группах
