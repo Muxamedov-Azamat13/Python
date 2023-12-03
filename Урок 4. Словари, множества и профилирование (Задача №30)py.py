@@ -10,5 +10,14 @@
 # 8
 # 11
 
-n = int(input())
+a1 = 2
+d = 3
+n = 4
 
+
+def array(a1, d, n):
+    for i in range(n):
+        print(a1 + i * d)
+
+
+array(a1, d, n)
